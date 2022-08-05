@@ -20,6 +20,12 @@ namespace estore.Models
         [NotMapped]
         public IFormFile ImageFile { get; set; }
         public string ImageName { get; set; }
+        public string productDescription { get; set; }
+        public string category { get; set; }
+        public Boolean isAddedToCart { get; set; }
+        public Boolean isAddedToCheckout { get; set; }
+        public Boolean inConfomation { get; set; }
+
         public Boolean isSlider { get; set; }
         public Boolean isCategory { get; set; }
         public Boolean isLatestProduct { get; set; }
@@ -27,17 +33,7 @@ namespace estore.Models
         public Boolean isBestCollection { get; set; }
         public Boolean isLatestOffer { get; set; }
         public Boolean isgallery { get; set; }
-        public product()
-        {
-            isSlider = false;
-            isCategory = false;
-            isLatestProduct = false;
-            isBestProduct = false;
-            isBestCollection = false;
-            isLatestOffer = false;
-            isgallery = false;
-
-        }
+      
 
 
     }
