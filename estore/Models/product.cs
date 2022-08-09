@@ -22,6 +22,7 @@ namespace estore.Models
         public string ImageName { get; set; }
         public string productDescription { get; set; }
         public string category { get; set; }
+        public int quantity { get; set; } = 1;
         public Boolean isAddedToCart { get; set; }
         public Boolean isAddedToCheckout { get; set; }
         public Boolean inConfomation { get; set; }
